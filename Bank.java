@@ -1,26 +1,58 @@
-public class Bank{
-    public static void main(String args[]){
-  
-    //Declare and initialize arrays of different types
-     int numberofEmployees[]={150};
-     char emp_initial[]={'A','c','T','D'};
-	 String id[]={"Amar","chetana","Tarun","Deepak"};
-      
-	 
-     //Display the each arrays
-	 for(int i=0;i<numberofEmployees.length; i++){
-	 System.out.println("number of Emp are :"+numberofEmployees[i]);
-	 }
-	 
-	 for(int i=0;i<emp_initial.length; i++){
-	 System.out.println("name of emp_initial :"+emp_initial[i]);
-	 
-	 }
-	 
-	 for(int i=0;i<id.length; i++){
-	 System.out.println("id is:"+id[i]);
-	 }
-	 
-	 
+package com.google.banking;
+
+public class Bank {
+	
+	private int accountno;
+	private String acc_holdername;
+	private String bankname;
+	private int adharno;
+	private int balance;
+	
+	public void setNumber(int accountno) {
+		this.accountno=accountno;
 	}
-  }
+	
+	public int getNumber() {
+		return this.accountno;
+	}
+
+	
+	public void setadharNum(int adharno) {
+		this.adharno=adharno;
+	}
+	
+	public int getadharNum() {
+		return this.adharno;
+	}
+	
+	public void setbalance(int balance) {
+		this.balance=balance;
+	}
+	
+	public int getbalance() {
+		return this.balance;
+	}
+	
+	public void setName(String bankname) {
+		this.bankname=bankname;
+	}
+	
+	public String getName() {
+		return this.bankname;
+
+}
+	public void setholderName(String acc_holdername) {
+		this.acc_holdername=acc_holdername;
+	}
+	
+	public String getholderName() {
+		return this.acc_holdername;
+	}
+	
+	
+	
+	
+	
+	
+	
+}
